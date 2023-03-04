@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+  font-family: system-ui;
+  letter-spacing: 1px;
+}
+
+/* setting variabels */
+:root {
+  --main-color: #555;
+  --font-color: wheat;
+}
+/* container styling */
+main{
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+  text-align: center;
+  flex-direction: column;
+  width: 800px;
+  max-width: 95%;
+  align-items: center;
+}
+/* main heading  */
+h1 {
+  display: block;
+  width: 100vw;
+  background-color: var(--main-color);
+  height: 170px;
+  color: var(--font-color);
+  line-height: 160px;
+  border-bottom: 8px solid;
+}
+img{
+  display: block;
+  width: content;
+  max-width: 100%;
+  margin: 0 auto ;
+}
+#tribute-info{
+  display: flex;
+  background-color: var(--main-color);
+  height: 170px;
+  color: var(--font-color);
+  border-bottom: 8px solid;
+  width: 90%;
+  text-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+#img-caption {
+  line-height: 2;
+  background-color: var(--font-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+p {
+  width: 70%;
+}
+
+
+p::before {
+  content: open-quote;
+  font-size: 35px;
+  color: var(--font-color);
+}
+#tribute-link {
+  color: var(--main-color);
+  font-weight: bold;
+  margin: 20px;
+  font-size: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--font-color);
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#tribute-link:hover {
+  color: var(--font-color);
+  background-color: var(--main-color);
+}
